@@ -1,8 +1,11 @@
 .Library {
     background-color: #494748;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.BookByAuthor {
+/* .BookByAuthor {
     align-self: center;
-}
+} */

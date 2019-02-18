@@ -9,14 +9,12 @@ class BookByAuthor extends Component {
             display.push(<Book className="Book" bookinfo={book}/>);
         });
         return(
-        <div >
             <div className="BookByAuthor">
                 <h1>{this.props.author}</h1>
                 <div className="Books">
                     {display}
                 </div>
             </div>
-        </div>
         );
     };
 };
