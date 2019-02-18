@@ -1,0 +1,8 @@
+.Library {
+    background-color: #494748;
+    display: flex;
+}
+
+.BookByAuthor {
+    align-self: center;
+}

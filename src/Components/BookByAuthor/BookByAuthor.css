@@ -1,0 +1,19 @@
+.BookByAuthor {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Books {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.BookByAuthor h1{
+    padding: auto 10px auto 10px;
+    background-color: white;
+    color: #EE975D;
+}

@@ -1,0 +1,33 @@
+.header {
+    background-color: #494748;
+    height: 20%;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.header div{
+    width: 100%;
+}
+
+.HorizontalLine {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+}
+.HorizontalLine hr{
+    margin: 0px;
+    background-color: white;
+    color: white;
+    height: 5px;
+    flex-basis: 50%;
+}
+
+.HorizontalLine :last-child{
+    /* align-self: flex-end; */
+    margin-left: 15%; 
+}
