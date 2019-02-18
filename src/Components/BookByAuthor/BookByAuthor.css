@@ -17,3 +17,7 @@
     background-color: white;
     color: #EE975D;
 }
+
+.Books :nth-child(n+1){
+    background-color: #ED965D;
+}

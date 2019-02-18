@@ -6,10 +6,10 @@ class Book extends Component {
         return(
             <div className="Book">
                     <img  className="image" alt='' src={require('../../images/cover_image.jpeg')} />
-                <div>
+                <div className="BookInfo">
                     {this.props.bookinfo.Name}
                 </div>
-                <div>
+                <div className="BookInfo">
                     {this.props.bookinfo.rating}
                 </div>
             </div>
