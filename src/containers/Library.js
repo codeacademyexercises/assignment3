@@ -1,7 +1,6 @@
-import {
-    ToggleLike,
-    InitialiseState,
-} from '../actions/actions';
+// import {
+//     InitialiseState,
+// } from '../actions/actions';
 import { connect } from 'react-redux';
 import Library from '../Components/Library/Library';
 
@@ -11,13 +10,13 @@ const mapStatetoProps = (state, ownProps)=>{
     }
 }
 
-const mapDispatchtoProps = (dispatch, ownProps)=>{
-    return {
-        initialState: ()=> dispatch(InitialiseState(ownProps.InitialState)),
-    }
-}
+// const mapDispatchtoProps = (dispatch, ownProps)=>{
+//     return {
+//         InitializeState: ()=> dispatch(InitialiseState(ownProps.books)),
+//     }
+// }
 
 export default connect(
     mapStatetoProps,
-    mapDispatchtoProps,
+    // mapDispatchtoProps,
 )(Library);

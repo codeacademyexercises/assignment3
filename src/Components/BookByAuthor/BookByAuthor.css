@@ -1,23 +1,42 @@
 .BookByAuthor {
+    margin: 50px 20px 20px 20px;
     width: 70%;
+    min-width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
+.Author {
+    position: relative;
+    bottom: 30px;
+    font-size: 32px;
+    color: #ED965D;
+    padding: 0 40px 10px 40px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px none white;
+}
+
 .Books {
+    margin: 20px;
     display: flex;
     justify-content: space-between;
+    align-content: space-around;
     flex-wrap: wrap;
 }
 
-.BookByAuthor h1{
-    padding: auto 10px auto 10px;
-    background-color: white;
-    color: #EE975D;
-}
-
-.Books :nth-child(n+1){
+.Books:after {
+    content: "";
+    margin: 20px;
+    flex: 1 1 auto;
+    max-width: 260px;
+  }
+/* .Books :nth-child(2n){
     background-color: #ED965D;
-}
+} */
+
+/* .Books :nth-child(8n+6), .Books :nth-child(8n+7), .Books :nth-child(8n+8){
+    background-color: white;
+} */

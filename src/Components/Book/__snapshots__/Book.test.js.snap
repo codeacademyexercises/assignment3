@@ -31,10 +31,14 @@ ShallowWrapper {
           className="image"
           src="cover_image.jpeg"
         />,
-        <div>
+        <div
+          className="BookInfo"
+        >
           Harry
         </div>,
-        <div>
+        <div
+          className="BookInfo"
+        >
           4.5
         </div>,
       ],
@@ -61,6 +65,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Harry",
+          "className": "BookInfo",
         },
         "ref": null,
         "rendered": "Harry",
@@ -72,6 +77,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": 4.5,
+          "className": "BookInfo",
         },
         "ref": null,
         "rendered": 4.5,
@@ -92,10 +98,14 @@ ShallowWrapper {
             className="image"
             src="cover_image.jpeg"
           />,
-          <div>
+          <div
+            className="BookInfo"
+          >
             Harry
           </div>,
-          <div>
+          <div
+            className="BookInfo"
+          >
             4.5
           </div>,
         ],
@@ -122,6 +132,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Harry",
+            "className": "BookInfo",
           },
           "ref": null,
           "rendered": "Harry",
@@ -133,6 +144,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": 4.5,
+            "className": "BookInfo",
           },
           "ref": null,
           "rendered": 4.5,

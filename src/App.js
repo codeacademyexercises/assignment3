@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
-import Library from './containers/Library';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import stateUpdate from './reducers/reducers';
-const store = createStore(stateUpdate,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+import Library from './Components/Library/Library';
 const axios = require('axios');
 
 let GetBooks =async()=> await axios.get('http://localhost:3005/BooksWithRatings').then((response)=> response.data);
@@ -13,16 +9,19 @@ class App extends Component {
   state={
     InitialState: null,
   }
-  componentWillMount(){
-    GetBooks().then((data)=>{this.setState({InitialState: data})})
-  }
+  async componentDidMount(){
+    await GetBooks().then((data)=> {for(var property in data){
+      data[property].forEach((book)=>{
+        book['like']=false;
+      });
+      this.props.InitializeState(data);
+    };return data;}).then((data)=> {this.setState({InitialState: data}); return data;}).then((data)=>{ console.log(data);});
+    }
  render() {
     return (
       <div className="WholeLibrary">
         <Header />
-        <Provider store={store}>
-          <Library InitialState={this.state.InitialState}/>
-        </Provider>
+        <Library books={this.state.InitialState}/>
       </div>
     );
   }

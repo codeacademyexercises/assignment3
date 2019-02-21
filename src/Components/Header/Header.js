@@ -5,12 +5,12 @@ class Header extends Component{
     render(){
         return(
             <header className="header">
-                <span>BS</span>
+                <span className="Logo">BS</span>
                 <div className="HorizontalLine">
                     <hr />
                     <hr />
                 </div>
-                <span>The Book Shelf</span>
+                <span className="Title">The Book Shelf</span>
             </header>
         );
     }

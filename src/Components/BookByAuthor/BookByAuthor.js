@@ -6,11 +6,11 @@ class BookByAuthor extends Component {
     render(){
         let display=[];
         this.props.InitialState.forEach((book, index)=>{
-            display.push(<Book className="Book" bookinfo={book}/>);
+            display.push(<Book index={index} bookinfo={book}/>);
         });
         return(
             <div className="BookByAuthor">
-                <h1>{this.props.author}</h1>
+                <div className="Author">{this.props.author}</div>
                 <div className="Books">
                     {display}
                 </div>
